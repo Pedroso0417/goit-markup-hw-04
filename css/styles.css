@@ -260,8 +260,8 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   background: var(--iris, #4d5ae5);
-  border: 2px solid var(--navyblue);
-  color: var(--white);
+  border: 0;
+  color: var(--WHITE, #fff);
 }
 .hero-button:hover {
   background-color: var(--ocean);
@@ -385,6 +385,15 @@ ul {
   width: 100%;
   text-align: center;
 }
+.benefits-svg-box {
+  width: 100%;
+  height: 112px;
+  border-radius: 4px;
+  background: var(--CLOUD, #f4f4fd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .team-social-list {
   display: flex;
   justify-content: center;
@@ -403,13 +412,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--iris-color);
-  color: var(--cloud-color);
+  background-color: #4d5ae5;
+  color: #f4f4fd;
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: var(--ocean-color);
+  background-color: #404bbf;
 }
 
 .team-social-svg {
@@ -419,7 +428,7 @@ ul {
 .team-title {
   display: flex;
   justify-content: center;
-  padding-top: 32px;
+  /* padding-top: 32px; */
   padding-bottom: 8px;
   color: var(--navyblue, #2e2f42);
   font-size: 20px;
@@ -430,7 +439,7 @@ ul {
 .team-position {
   display: flex;
   justify-content: center;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -479,8 +488,8 @@ ul {
 
 .customers-link:hover,
 .customers-link:focus {
-  border-color: var(--ocean-color);
-  color: var(--ocean-color);
+  border-color: #404bbf;
+  color: #404bbf;
 }
 
 .customers-svg {
@@ -545,7 +554,7 @@ ul {
 }
 
 .footer-socials-text {
-  color: var(--white-color);
+  color: white;
   display: flex;
 }
 
@@ -561,17 +570,18 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--iris-color);
-  margin-top: 8px;
+  background-color: #4d5ae5;
+  /* margin-top: 8px; */
+  color: white;
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .footer-socials-svg {
-  fill: var(--cloud-color);
+  fill: currentColor;
 }
 .button-container {
   display: flex;
@@ -600,4 +610,15 @@ ul {
 }
 .project-item {
   background: var(--WHITE, #fff);
+}
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
